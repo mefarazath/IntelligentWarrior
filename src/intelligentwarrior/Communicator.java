@@ -1,13 +1,6 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package intelligentwarrior;
 
-/**
- *
- * @author Farazath Ahamed
- */
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -55,7 +48,7 @@ public class Communicator {
                 readLine = input.readLine();
                 System.out.println("Server Reply : "+readLine);
                 input.close();
-                clientSocket.close();
+                 clientSocket.close();
                 ServerSocketForClient.close();
                 error = false;
             }
